@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<<<<<<< HEAD
+    <title>118 Forms example</title>
+</head>
+<style>
+    code {
+        font-family: Consolas,"courier new",serif;
+        color: crimson;
+        background-color: #f1f1f1;
+        padding: 2px;
+        font-size: 105%;
+    }
+</style>
+<body>
+    <h1>Over View</h1>
+    <h2>What is a Form</h2>
+    <p>
+        An HTML Form tag is an 'encapsulating' tag with other tags inside it that define their purpose.<br>
+        The HTML &lt;form&gt; element is used to create an HTML form for user input (below is a simple form).<br>
+        <form>
+            <label for="fname1">First Name:</label><br>
+            <input type="text" id="fname1" name="fname1"><br>
+            <label for="lname1">Last Name:</label><br>
+            <input type="text" id="lname1" name="lname1"><br>
+            <input type="submit">
+        </form>
+        A form tag in editor will be formatted with a label that has the 'for' attribute assigned the same text<br>
+        as the &lt;input&gt; tag id and name attribute for look up when sending a form from our page.<br>
+        <code>
+            &lt;form&gt;<br>
+            &lt;label for="fname"&gt;First Name:&lt;/label&gt;&lt;br&gt;<br>
+            &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;<br>
+            &lt;label for="lname"&gt;Last Name:&lt;/label&gt;&lt;br&gt;<br>
+            &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;<br>
+            &lt;input type="submit"&gt;<br>
+            &lt;/form&gt;<br>
+        </code>
+        This form currently does nothing of interest as it doesn't even respond to your input. One main part of<br>
+        forms is the backend interaction it has with scripts; in this case we would likely add your information<br>
+        to a database for storage. We don't need to do anything that complicated as of yet.
+        <br><br>
+        Below is the same form, however under the hood things have changed. (try it)
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="submit" value="Send">
+    </form>
+        Now you can see the data we sent out with the form as I directed it to a traceback script hosted by <br>
+        <a href="http://jkorpela.fi/">http://jkorpela.fi/</a> and we get back a table with the id attributes and the values we gave the form.<br>
+        It is typical of webpages not to show us our own conformation when making form submissions but this is<br>
+        meant to show you more of what we learned in 118 this week. The following is our new code for the form tag is <br>
+    <code>
+        &lt;form action="http://jkorpela.fi/cgi-bin/echo.cgi"&gt;<br>
+        &lt;label for="fname"&gt;First Name:&lt;/label&gt;&lt;br&gt;<br>
+        &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;<br>
+        &lt;label for="lname"&gt;Last Name:&lt;/label&gt;&lt;br&gt;<br>
+        &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;<br>
+        &lt;input type="submit" value="Send"&gt;<br>
+        &lt;/form&gt;<br>
+    </code>
+        Looking here we changed two major components for this to function the way it has in the initial form tag <br>
+        &lt;form action="http://jkorpela.fi/cgi-bin/echo.cgi"&gt; as the action attribute specifies where to send the form-data when a form is submitted <br>
+    </p>
+=======
+    <title>118 Forms</title>
+</head>
+<body>
+    <h1>What the Fuck</h1>
+>>>>>>> master
+</body>
+</html>
