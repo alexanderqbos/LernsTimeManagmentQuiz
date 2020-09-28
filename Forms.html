@@ -12,20 +12,25 @@
         padding: 20px;
         font-size: 105%;
     }
-    p {
+    div.body {
+        font-family: "Arial",sans-serif;
         padding-left: 50px;
         padding-right: 50px;
         font-size: 18px;
         align-content: center;
     }
     form {
-        padding-left: 120px;
+        padding-left: 10px;
     }
 </style>
 <body>
-    <h1>Over View</h1>
-    <h2>What is a Form</h2>
-    <p>An HTML Form tag is an 'encapsulating' tag with other tags inside it that define their purpose. The HTML &lt;form&gt; element is used to create an HTML form for user input (below is a simple form). </p>
+<div class="body">
+    <header>
+        <h1>Overview</h1>
+        <h2>What is a Form?</h2>
+    </header>
+    <p>An HTML Form tag is an 'encapsulating' tag with other tags inside it that define their purpose. The HTML
+            &lt;form&gt; element is used to create an HTML form for user input (below is a simple form). </p>
     <form>
         <label for="fname1">First Name:</label><br>
         <input type="text" id="fname1" name="fname1"><br>
@@ -33,8 +38,8 @@
         <input type="text" id="lname1" name="lname1"><br>
         <input type="submit">
     </form>
-    <p>A form tag in editor will be formatted with a label that has the 'for' attribute assigned the same text
-        as the &lt;input&gt; tag id and name attribute for look up when sending a form from our page.</p>
+        <p>A form tag in editor will be formatted with a label that has the 'for' attribute assigned the same text
+            as the &lt;input&gt; tag id and name attribute for look up when sending a form from our page.</p>
     <div class="code">
         &lt;form&gt;<br>
         &lt;label for="fname"&gt;First Name:&lt;/label&gt;&lt;br&gt;<br>
@@ -47,8 +52,8 @@
     <p>This form currently does nothing of interest as it doesn't even respond to your input. One main part of
         forms is the backend interaction it has with scripts; in this case we would likely add your information
         to a database for storage. We don't need to do anything that complicated as of yet.
-    <br><br>
-    Below is the same form, however under the hood things have changed. (try it)</p>
+        <br><br>
+        Below is the same form, however under the hood things have changed. (try it)</p>
     <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname" name="fname"><br>
@@ -72,6 +77,7 @@
     <p>Looking here we changed two major components for this to function the way it has in the initial form tag
         &lt;form action="http://jkorpela.fi/cgi-bin/echo.cgi"&gt; as the action attribute specifies where to send the form-data when a form is submitted</p>
     <br><br>
-    <a href="index.html">Homepage</a> <<<<<< HOMEPAGE!
+</div>
+<footer> <a href="index.html">Homepage</a> <<<<<< HOMEPAGE! </footer>
 </body>
 </html>
