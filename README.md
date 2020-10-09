@@ -1,4 +1,3 @@
-# 118_explain
-Explanations for 118 material and examples
+# Stuff made in HTML
 
-I intend to update this git as we progress through the course and give some other explanations for the material we learn.
+I don't know when I will update this git, if there is something to ask...ping me on the course discord.
