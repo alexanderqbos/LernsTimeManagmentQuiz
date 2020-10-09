@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Alexander Bos - Time Management Self Assessment</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="container">
-        <form id="TMSAform" name="TMSAform">
-            <ol>
-                <div class="question">
-                    <li>I keep a careful record of the dates of upcoming major events such as tests and assignments.</li>
-                    <input type="number" name="q1" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I often feel really panicky about being behind with my work.</li>
-                    <input type="number" name="q2" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>During a study sessions, I set small goals and work to achieve them (e.g., read 5 pages of text and do three math problems).</li>
-                    <input type="number" name="q3" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I tend to miss classes.</li>
-                    <input type="number" name="q4" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>If I need to solve a problem quickly, I get help from another student, the teacher, or other help resources.</li>
-                    <input type="number" name="q5" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I often miscalculate how much time homework tasks will take.</li>
-                    <input type="number" name="q6" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I have set up a regular plan for my study activities.</li>
-                    <input type="number" name="q7" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I find my current course load too heavy.</li>
-                    <input type="number" name="q8" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I begin assignments early so that I will have time to do a good job.</li>
-                    <input type="number" name="q9" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I have difficulty concentrating while doing homework.</li>
-                    <input type="number" name="q10" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I plan ahead so I can be flexible about putting in extra hours if I have a lot of school work to do.</li>
-                    <input type="number" name="q11" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I always seem to be behind with my work.</li>
-                    <input type="number" name="q12" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I regularly use a day planner to plan my activities.</li>
-                    <input type="number" name="q13" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>My marks tend to suffer because of last minute cramming for tests.</li>
-                    <input type="number" name="q14" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>Each day I have clear goals what I wish to accomplish.</li>
-                    <input type="number" name="q15" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I am easily distracted from school work by my friends, tv, etc.</li>
-                    <input type="number" name="q16" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>. I really enjoy working on the courses I am taking.</li>
-                    <input type="number" name="q17" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I can only work if I feel like working.</li>
-                    <input type="number" name="q18" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I prioritize tasks effectively.</li>
-                    <input type="number" name="q19" min="0" max="5" value="0">
-                </div>
-                <div class="question">
-                    <li>I have a hard time deciding just what school work I should be doing outside of class.</li>
-                    <input type="number" name="q20" min="0" max="5" value="0">
-                </div>
-            </ol>
-            <input type="button" value="submit" onclick="completeForm()">
-        </form>
-        <div id="result">
-            <p id="answer"></p>
-        </div>
+<header>
+    <h1><u>Time Managment Quiz!</u></h1>
+</header>
+<div id="container">
+    <form id="TMSAform" name="TMSAform">
+        <ol>
+            <div class="question">
+                <li>I keep a careful record of the dates of upcoming major events such as tests and assignments.</li>
+                <input type="number" name="q1" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I often feel really panicky about being behind with my work.</li>
+                <input type="number" name="q2" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>During a study sessions, I set small goals and work to achieve them (e.g., read 5 pages of text and do three math problems).</li>
+                <input type="number" name="q3" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I tend to miss classes.</li>
+                <input type="number" name="q4" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>If I need to solve a problem quickly, I get help from another student, the teacher, or other help resources.</li>
+                <input type="number" name="q5" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I often miscalculate how much time homework tasks will take.</li>
+                <input type="number" name="q6" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I have set up a regular plan for my study activities.</li>
+                <input type="number" name="q7" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I find my current course load too heavy.</li>
+                <input type="number" name="q8" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I begin assignments early so that I will have time to do a good job.</li>
+                <input type="number" name="q9" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I have difficulty concentrating while doing homework.</li>
+                <input type="number" name="q10" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I plan ahead so I can be flexible about putting in extra hours if I have a lot of school work to do.</li>
+                <input type="number" name="q11" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I always seem to be behind with my work.</li>
+                <input type="number" name="q12" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I regularly use a day planner to plan my activities.</li>
+                <input type="number" name="q13" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>My marks tend to suffer because of last minute cramming for tests.</li>
+                <input type="number" name="q14" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>Each day I have clear goals what I wish to accomplish.</li>
+                <input type="number" name="q15" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I am easily distracted from school work by my friends, tv, etc.</li>
+                <input type="number" name="q16" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>. I really enjoy working on the courses I am taking.</li>
+                <input type="number" name="q17" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I can only work if I feel like working.</li>
+                <input type="number" name="q18" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I prioritize tasks effectively.</li>
+                <input type="number" name="q19" min="0" max="5" value="0">
+            </div>
+            <div class="question">
+                <li>I have a hard time deciding just what school work I should be doing outside of class.</li>
+                <input type="number" name="q20" min="0" max="5" value="0">
+            </div>
+        </ol>
+        <input id="submitButton" type="button" value="submit" onclick="completeForm()">
+    </form>
+    <div id="result">
+        <p id="answer">Score: 0, Percentile: 0</p>
     </div>
+</div>
 </body>
 </html>
